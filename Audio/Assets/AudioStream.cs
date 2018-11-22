@@ -83,7 +83,6 @@ namespace SanAndreasUnity.Audio
             byte[] bytes = br.ReadBytes(lenght);
             bytes = Stream_Decode(bytes, lenght, (int)br.BaseStream.Position - lenght);
             //Assignes the bytes to a oggfile.......
-            File.WriteAllBytes("D:/apps/NFH2andMORE/Grand Theft Auto San Andreas/Audio/streams/test.ogg", bytes);
             return new Ogg(bytes);
         }
 
